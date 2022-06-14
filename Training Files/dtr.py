@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 31 13:45:05 2022
+Created on Tue May 31 13:23:06 2022
 
 @author: HP
 """
@@ -18,7 +18,7 @@ header = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mltok
 # NOTE: manually define and pass the array(s) of values to be scored in the next line
 payload_scoring = {"input_data": [{"fields": ["f0","f1","f2"], "values": [[1997,    1,    7]]}]}
 
-response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/da14b2af-e790-4ef9-aefc-4e03647d8c04/predictions?version=2022-05-31', json=payload_scoring,
+response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/121af84c-5fca-429f-b3f3-53fafcba2fde/predictions?version=2022-05-31', json=payload_scoring,
  headers={'Authorization': 'Bearer ' + mltoken})
 print("Scoring response")
 #print(response_scoring.json())
